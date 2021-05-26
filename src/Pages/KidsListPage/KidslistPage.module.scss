@@ -1,0 +1,24 @@
+.root {
+
+}
+.pageTitle {
+  margin-bottom: 1em;
+}
+
+.toRight {
+  float: right;
+}
+
+.editable {
+  cursor: pointer;
+  &:hover{
+    background-color: rgba(0, 186, 168, 0.05);
+  }
+}
+
+.formDiv{
+  max-width: 420px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}

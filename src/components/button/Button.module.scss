@@ -1,0 +1,31 @@
+.root {
+  width: 150px;
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #00baa8;
+
+  &:hover {
+    background-color: #00baa8;
+    color: white
+  }
+  &:active{
+    transition: background-color 1s;
+    background-color: #00a190;
+    border: 1px solid #00a190;
+  }
+}
+.roundAdd {
+  color: #00baa8;
+  background-color: white;
+  border: 1px solid #00baa8;
+  width: 44px;
+  height: 44px;
+  line-height: 1;
+  border-radius: 22px;
+  font-size: 36px;
+  text-align: center;
+  vertical-align: middle;
+  &:hover{
+    box-shadow: 3px 3px 3px rgba(0,0,0, 0.3);
+  }
+}

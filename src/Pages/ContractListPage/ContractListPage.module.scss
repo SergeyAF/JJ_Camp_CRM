@@ -1,0 +1,32 @@
+.root {
+
+}
+.pageTitle {
+  margin-bottom: 1em;
+}
+
+.finder {
+  margin-bottom: 10px;
+
+  select{
+    padding: 0 5px;
+    margin-right: 10px;
+    border: 1px solid lightgray;
+  }
+}
+
+.findString {
+  outline: none;
+  border: 1px solid lightgray;
+  &:focus-visible, &:hover {
+    transition: all  0.5s;
+    border: 1px solid #00a190;
+  }
+  &:target {
+    border: 1px solid #00a190;
+  }
+
+  option{
+    border: 1px solid #00a190
+  }
+}
