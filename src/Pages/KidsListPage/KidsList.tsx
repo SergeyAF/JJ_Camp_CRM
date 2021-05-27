@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import s from './KidslistPage.module.scss';
 import Layout from "../../components/Layout";
 import Button from "../../components/button/Button";
-import {fetchKidsListThunk, createKidThunk} from "../../redux/actions";
+import {fetchKidsListThunk, createKidThunk} from "../../redux/actions/thunks";
 import {bindActionCreators} from "redux";
 import {IKid} from "../../MockData/kidList";
 import Table from "../../components/Table/Table";

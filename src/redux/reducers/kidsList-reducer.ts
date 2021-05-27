@@ -1,4 +1,6 @@
 import {IKid} from "../../MockData/kidList";
+import { ActionsType } from "../actions/actions.type";
+
 
 const initState = {
   kidsList: [] as IKid[],
@@ -7,15 +9,15 @@ const initState = {
 
 type initStateType = typeof initState;
 
-const kidsListReducer = (state:initStateType = initState, action:any) => {
+const kidsListReducer = (state:initStateType = initState, action: ActionsType) => {
   switch (action.type) {
-    case 'SET-KIDS-LIST':
+    case 'kidsList/SET-KIDS-LIST':
       return ({
         ...state,
         kidsList: action.payload.kids,
         total: action.payload.total
         })
-    case 'ADD-KID-TO-LIST':
+    case 'kidsList/ADD-KID-TO-LIST':
       return ({
         ...state,
         kidsList: [...state.kidsList, action.payload],
