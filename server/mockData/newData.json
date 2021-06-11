@@ -1,0 +1,606 @@
+[
+  {
+    "id": 1,
+    "firstName": "София",
+    "lastName": "Иванникова",
+    "gender": "female",
+    "dateOfBirth": "22.10.2011",
+    "parents": [
+      {
+        "name": "Аня",
+        "phone": "380669946678"
+      }
+    ],
+    "dateOfCreation": "27-Mar"
+  },
+  {
+    "id": 2,
+    "firstName": "Альбина",
+    "lastName": "Сумец",
+    "gender": "female",
+    "dateOfBirth": "28.07.2011",
+    "parents": [
+      {
+        "name": "Марина",
+        "phone": "380966376800"
+      }
+    ],
+    "dateOfCreation": "22-Mar"
+  },
+  {
+    "id": 3,
+    "firstName": "Всеволод",
+    "lastName": "Дехтярь",
+    "gender": "male",
+    "parents": [
+      {
+        "name": "Александра",
+        "phone": "+380503231451"
+      }
+    ],
+    "dateOfCreation": "27-May"
+  },
+  {
+    "id": 4,
+    "firstName": "Валентина",
+    "lastName": "Дехтярь",
+    "gender": "female",
+    "parents": [
+      {
+        "name": "Александра",
+        "phone": "+380503231451"
+      }
+    ],
+    "dateOfCreation": "27-May"
+  },
+  {
+    "id": 5,
+    "firstName": "Антон",
+    "lastName": "Дехтярь",
+    "gender": "male",
+    "parents": [
+      {
+        "name": "Александра",
+        "phone": "+380503231451"
+      }
+    ],
+    "dateOfCreation": "27-May"
+  },
+  {
+    "id": 6,
+    "firstName": "Даша",
+    "lastName": "Ловчикова",
+    "gender": "female",
+    "dateOfBirth": "7/5/05",
+    "parents": [
+      {
+        "name": "Елена",
+        "phone": "380675778211"
+      }
+    ],
+    "dateOfCreation": "10-Mar"
+  },
+  {
+    "id": 7,
+    "firstName": "Анита",
+    "lastName": "Безручка",
+    "gender": "female",
+    "dateOfBirth": "1/5/2005",
+    "parents": [
+      {
+        "name": "Оля"
+      }
+    ],
+    "dateOfCreation": "5-May"
+  },
+  {
+    "id": 8,
+    "firstName": "Настя",
+    "lastName": "Ржевская",
+    "gender": "female",
+    "dateOfBirth": "10.10.2008",
+    "parents": [
+      {
+        "name": "Катя",
+        "phone": "0669846260"
+      }
+    ],
+    "dateOfCreation": "29-Apr"
+  },
+  {
+    "id": 9,
+    "firstName": "Анастасия",
+    "lastName": "Юрченко",
+    "gender": "female",
+    "dateOfBirth": "10/14/10",
+    "parents": [
+      {
+        "name": "Анастасия",
+        "phone": "380991750702"
+      }
+    ],
+    "dateOfCreation": "29-Mar"
+  },
+  {
+    "id": 10,
+    "firstName": "Тимофей",
+    "lastName": "Замора",
+    "gender": "male",
+    "dateOfBirth": "12/6/07",
+    "dateOfCreation": "31-Mar",
+    "parents": [
+      {
+        "name": "Сергей",
+        "phone": "380679566062"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "firstName": "Ангелина",
+    "lastName": "Исаева",
+    "gender": "female",
+    "dateOfBirth": "1/4/11",
+    "dateOfCreation": "19-Apr",
+    "parents": [
+      {
+        "name": "Мария",
+        "phone": "380660029376"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "firstName": "Тимофей",
+    "lastName": "Юрьев",
+    "gender": "male",
+    "dateOfBirth": "29.03.2010",
+    "comments": "от Натана",
+    "parents": [
+      {
+        "name": "Ольга",
+        "phone": "380663326221"
+      }
+    ],
+    "dateOfCreation": "6-Apr"
+  },
+  {
+    "id": 13,
+    "firstName": "Александра",
+    "lastName": "Емельянова",
+    "gender": "female",
+    "dateOfBirth": "24.07.2015",
+    "parents": [
+      {
+        "name": "Анастасия",
+        "phone": "380995057772"
+      }
+    ],
+    "comments": "на сл. недели в офис",
+    "dateOfCreation": ""
+  },
+  {
+    "id": 14,
+    "firstName": "Влада",
+    "lastName": "Скок",
+    "gender": "male",
+    "dateOfBirth": "1/12/12",
+    "dateOfCreation": "25-Apr",
+    "parents": [
+      {
+        "name": "Юля",
+        "phone": "380956303023"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "firstName": "Артём",
+    "lastName": "Скок",
+    "gender": "male",
+    "dateOfBirth": "1/12/12",
+    "dateOfCreation": "25-Apr",
+    "parents": [
+      {
+        "name": "Юлия",
+        "phone": "380956303023"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "firstName": "София",
+    "lastName": "Котенко",
+    "gender": "female",
+    "dateOfBirth": "2/1/07",
+    "dateOfCreation": "28-Apr",
+    "comments": "предоплата на карту",
+    "parents": [
+      {
+        "name": "Ольга",
+        "phone": "380996148940 0978347772"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "firstName": "Даша",
+    "lastName": "Стриж",
+    "gender": "female",
+    "dateOfBirth": "7/22/08",
+    "dateOfCreation": "27-Apr",
+    "parents": [
+      {
+        "name": "Лариса",
+        "phone": "380506438420"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "firstName": "Мария",
+    "lastName": "Мозговая",
+    "gender": "female",
+    "dateOfBirth": "10/28/09",
+    "dateOfCreation": "27-Apr",
+    "parents": [
+      {
+        "name": "Ирина",
+        "phone": "+380509549104"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "firstName": "Маргарита",
+    "lastName": "Косачёва",
+    "gender": "female",
+    "dateOfBirth": "9/29/14",
+    "dateOfCreation": "29-Apr",
+    "parents": [
+      {
+        "name": "Алеся",
+        "phone": "380958870222"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "firstName": "Маша",
+    "lastName": "Николаева",
+    "gender": "female",
+    "dateOfBirth": "10",
+    "dateOfCreation": "27-May",
+    "parents": [
+      {
+        "name": "Елена",
+        "phone": "380509180841"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "firstName": "Тимофей",
+    "lastName": "Гурьев",
+    "gender": "male",
+    "dateOfBirth": "13",
+    "parents": [
+      {
+        "name": "Анна",
+        "phone": "80503007942"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "firstName": "Никита",
+    "lastName": "Петренко",
+    "gender": "male",
+    "dateOfBirth": "6/14/10",
+    "dateOfCreation": "29-Apr",
+    "parents": [
+      {
+        "name": "Ирина",
+        "phone": "0665716167"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "firstName": "Яна",
+    "lastName": "Кущ",
+    "gender": "female",
+    "dateOfBirth": "6/11/12",
+    "dateOfCreation": "22-May",
+    "comments": "сайт",
+    "parents": [
+      {
+        "name": "Кущ Ольга",
+        "phone": "+380993597832"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "firstName": "Никита",
+    "lastName": "Лукашенко",
+    "gender": "male",
+    "dateOfBirth": "7/9/11",
+    "comments": "на вых.поедут смотреть Элат",
+    "parents": [
+      {
+        "name": "Ирина",
+        "phone": "380505775758"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "firstName": "София",
+    "lastName": "Соломаха",
+    "gender": "female",
+    "dateOfBirth": "3/16/09",
+    "dateOfCreation": "06.05.2021/14.05",
+    "parents": [
+      {
+        "name": "Ольга",
+        "phone": "380975161054"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "firstName": "Мирослав",
+    "lastName": "Свищёв",
+    "gender": "male",
+    "dateOfBirth": "7/5/14",
+    "dateOfCreation": "18-May",
+    "comments": "ЧК определяются с сменой 1 или 2+ подружка . Предоплата 18.05",
+    "parents": [
+      {
+        "name": "Оксана",
+        "phone": "380960002505"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "firstName": "Алеся",
+    "lastName": "Савченко",
+    "gender": "female",
+    "dateOfBirth": "11/10/10",
+    "dateOfCreation": "21-May",
+    "comments": "подружка свищёва",
+    "parents": [
+      {
+        "name": "Юлия Водолажская",
+        "phone": "380630177274"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "firstName": "София",
+    "lastName": "Шевченко",
+    "gender": "female",
+    "dateOfBirth": "5/18/06",
+    "dateOfCreation": "12.05.2021/18.05",
+    "parents": [
+      {
+        "name": "Игорь",
+        "phone": "380668039601"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "firstName": "Владислава",
+    "lastName": "Носенко",
+    "gender": "female",
+    "dateOfBirth": "1/19/10",
+    "comments": "от Саган",
+    "parents": [
+      {
+        "name": "Юлия",
+        "phone": "380969969747"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "firstName": "Тимофей",
+    "lastName": "Козлов",
+    "gender": "male",
+    "parents": [
+      {
+        "name": "Михаил"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "firstName": "Вера",
+    "lastName": "Кабишева",
+    "gender": "female",
+    "dateOfBirth": "12/24/09",
+    "dateOfCreation": "24-May",
+    "comments": "Договор и счёт ТОВ Капилка",
+    "parents": [
+      {
+        "name": "Дмитрий",
+        "phone": "38505651450"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "firstName": "Роман",
+    "lastName": "Эссон",
+    "gender": "male",
+    "parents": [
+      {
+        "name": "",
+        "phone": ""
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "firstName": "София",
+    "lastName": "Тряпицына",
+    "gender": "female",
+    "dateOfCreation": "17-May",
+    "comments": "Продажа Марина",
+    "parents": [
+      {
+        "name": "Сергей",
+        "phone": "380506340212"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "firstName": "Мария",
+    "lastName": "Николаева",
+    "gender": "female",
+    "dateOfBirth": "10/14/10",
+    "dateOfCreation": "27-May",
+    "comments": "в комнату с Есиной",
+    "parents": [
+      {
+        "name": "Елена",
+        "phone": "380509180841"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "firstName": "София",
+    "lastName": "Есина",
+    "gender": "female",
+    "dateOfBirth": "6/27/09",
+    "dateOfCreation": "26-May",
+    "parents": [
+      {
+        "name": "Юлия",
+        "phone": "380674294543"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "firstName": "Никита",
+    "lastName": "Логвиненко",
+    "gender": "male",
+    "dateOfBirth": "12/30/06",
+    "comments": "оплата 01-02.06",
+    "parents": [
+      {
+        "name": "Алёна",
+        "phone": "380993377022"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "firstName": "Михаил",
+    "lastName": "Чуйко",
+    "gender": "male",
+    "dateOfBirth": "9/8/07",
+    "comments": "поселить вместе с Логвиненко , в один отряд , оплата 01-02.06",
+    "parents": [
+      {
+        "name": "",
+        "phone": ""
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "firstName": "София",
+    "lastName": "Пухтаевич",
+    "gender": "female",
+    "dateOfBirth": "4/11/07",
+    "comments": "Купянск 25.05 вторая половина дня",
+    "parents": [
+      {
+        "name": "Ольга",
+        "phone": "955014468"
+      },
+      {
+        "name": "Евгений",
+        "phone": "0661571637"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "firstName": "Алиса",
+    "lastName": "Загороднева",
+    "gender": "female",
+    "dateOfBirth": "12/22/10",
+    "dateOfCreation": "24-May",
+    "comments": "в отряд с своим возрастом и старше. Поселить с Литвиненко, Есина , Загороднева",
+    "parents": [
+      {
+        "name": "Сергей",
+        "phone": "380675707717"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "firstName": "Анна",
+    "lastName": "Литвиненко",
+    "gender": "female",
+    "dateOfBirth": "9/28/10",
+    "dateOfCreation": "24-May",
+    "parents": [
+      {
+        "name": "Литвиненко Наталья",
+        "phone": "+38(097)9938519"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "firstName": "Мария",
+    "lastName": "Николаева",
+    "gender": "female",
+    "parents": [
+      {
+        "name": "",
+        "phone": ""
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "firstName": "Владислава",
+    "lastName": "Винник",
+    "gender": "male",
+    "dateOfBirth": "1/22/09",
+    "dateOfCreation": "25-May",
+    "comments": "В один отряд и комнату Хроль",
+    "parents": [
+      {
+        "name": "Оксана",
+        "phone": "380509648388"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "firstName": "София",
+    "lastName": "Хроль",
+    "gender": "female",
+    "dateOfBirth": "10/4/08",
+    "dateOfCreation": "25-May",
+    "parents": [
+      {
+        "name": "Оксана",
+        "phone": "380993117417"
+      }
+    ]
+  }
+]
