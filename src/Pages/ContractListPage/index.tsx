@@ -1,13 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import s from './ContractListPage.module.scss';
 import Layout from "../../components/Layout";
 import {getNameFromId} from "../../utils/getNameFromId";
 import {contractsList} from "../../MockData/contractList";
 import {campsList} from "../../MockData/campsList";
 import Button from "../../components/button/Button";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "../../redux/store";
 import Table from "../../components/Table/Table";
+import {fetchKidsListThunk} from "../../redux/actions/thunks";
 
 const ContractListPage: React.FC = (props) => {
   const searchFields = [
@@ -37,6 +38,14 @@ const ContractListPage: React.FC = (props) => {
   const tableHeaders = ["Дата", "Лагерь", "№ путевки", "Смена", "Ребенок", "Цена путевки"]
 
   const kidsList = useSelector((state: RootState) => state.kids.kidsList)
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    // todo: will refactor to work with DB backend
+    if (kidsList.length === 0) {
+      dispatch(fetchKidsListThunk())
+    }
+  },[kidsList])
 
   return (
     <>

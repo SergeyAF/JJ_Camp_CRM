@@ -22,7 +22,7 @@ interface IMapStateToProps {
 interface IMapDispatchToProps {
   // setKidsList: (args:IKid[]) => void
   fetchKidsList: () => void
-  createKid: (data:any) => void
+  createKid: (data: any) => void
   // startLoading: () => void
   // endLoading: () => void
 }
@@ -31,22 +31,30 @@ interface IMapDispatchToProps {
 const KidsListPage: React.FC<IMapStateToProps & IMapDispatchToProps> = (props) => {
 
   const calculateBirthday = (date: string): number => {
-    const toUTCDate = date.split('.').reverse().join('.')
-    const birthDay = new Date(toUTCDate).getTime()
+    if (!date) return 0
+    // const toUTCDate = date.split('-').join('.')
+    console.log(date)
+    const birthDay = new Date(date).getTime()
     const diff = Date.now() - birthDay
     return Math.abs(new Date(diff).getUTCFullYear() - 1970)
 
   }
 
-  const handleSubmit = (values:any) => {
-    props.createKid(values);
+  const handleSubmit = (values: any) => {
+    const {firstName, lastName, dob, gender} = values
+    const kid = {
+      name: `${lastName} ${firstName}`,
+      type: 'KID',
+      info: {gender, dob}
+    }
+    props.createKid(kid);
   }
   const tableHeaders = ["№", "ФИО", "Пол", "Возраст", "Дата рождения"]
 
 
   useEffect(() => {
     props.fetchKidsList()
-  },[])
+  }, [])
 
   return (
     <>
@@ -61,16 +69,16 @@ const KidsListPage: React.FC<IMapStateToProps & IMapDispatchToProps> = (props) =
               </tr>
               </thead>
               <tbody>
-              {props.kidsList.map((el,index) => (
+              {props.kidsList.map((el, index) => (
                 // todo: Create "Details Form" with ID
                 <tr key={el.id} className={s.editable} onClick={() => {
                   console.log(`Show Details Form with ID: ${el.id}`)
                 }}>
-                  <td>{index+1}</td>
-                  <td>{el.lastName} {el.firstName}</td>
+                  <td>{index + 1}</td>
+                  <td>{el.name}</td>
                   <td>{el.gender === 'male' ? 'мальчик' : 'девочка'}</td>
-                  <td>{calculateBirthday(el.dateOfBirth)}</td>
-                  <td>{el.dateOfBirth}</td>
+                  <td>{calculateBirthday(el.dob)}</td>
+                  <td>{el.dob}</td>
 
                 </tr>
               ))}
@@ -87,8 +95,8 @@ const KidsListPage: React.FC<IMapStateToProps & IMapDispatchToProps> = (props) =
                   firstName: '',
                   lastName: '',
                   gender: '',
-                  dateOfBirth: ''
-                }} onSubmit={(values)=>handleSubmit(values)}>
+                  dob: ''
+                }} onSubmit={(values) => handleSubmit(values)}>
                   <Form>
                     <div className={s.formDiv}>
                       <label htmlFor='firstName'>Имя</label>
@@ -112,8 +120,8 @@ const KidsListPage: React.FC<IMapStateToProps & IMapDispatchToProps> = (props) =
                       </div>
                     </div>
                     <div className={s.formDiv}>
-                      <label htmlFor='dateOfBirth'>Дата рождения (дд.мм.гггг)</label>
-                      <Field name='dateOfBirth' placeholder='01.01.2010' type='text'/>
+                      <label htmlFor='dob'>Дата рождения (дд.мм.гггг)</label>
+                      <Field name='dob' placeholder='01.01.2010' type='text'/>
                     </div>
                     <div className={s.formDiv}><Button type="submit">Добавить</Button>
                       <Link to='/kids'><Button>Отменить</Button></Link></div>

@@ -17,7 +17,7 @@ const app = express();
 
 app.use(cors())
 app.use(express.json())
-app.use(authMiddleware, express.static(path.resolve(__dirname, 'static')))
+app.use('/api/static', authMiddleware, express.static(path.resolve(__dirname, 'static')))
 app.use(fileUpload({}))
 app.use('/api', router)
 

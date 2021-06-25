@@ -1,4 +1,5 @@
 const {Contractor_type} = require('../models/models')
+const deleteFromDB = require('./basicCRUD')
 const ApiError = require('../error/ApiError')
 
 class ContTypeController {
@@ -14,6 +15,11 @@ class ContTypeController {
   async getAll(req, res) {
     const types = await Contractor_type.findAll()
     return res.json(types)
+  }
+
+  async delete (req, res, next) {
+    const {id} = req.param
+    await deleteFromDB(Contractor_type,id,res,next)
   }
 }
 

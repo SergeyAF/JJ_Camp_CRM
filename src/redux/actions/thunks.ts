@@ -8,6 +8,7 @@ export const fetchKidsListThunk = () => async (dispatch:AppDispatch) => {
   dispatch(setKidsListAction(data))
 }
 
+//todo fix backend
 export const createKidThunk = (kid:IKid) => async (dispatch:AppDispatch) => {
   const resp = await api.addKid(kid)
   if (resp.status_code === 1) {
@@ -20,15 +21,16 @@ export const createKidThunk = (kid:IKid) => async (dispatch:AppDispatch) => {
 
 //todo: create Fetch.API and move this method
 
-const host = 'http://localhost:4000';
+const host = 'http://localhost:4000/api';
 class API {
   async getKids () {
-    const response = await fetch(`${host}/kids`)
+    const response = await fetch(`${host}/contractor`)
     const data = await response.json()
+    console.log(data)
     return data
   }
   async addKid (kid:IKid) {
-    const response = await fetch(`${host}/kids`, {
+    const response = await fetch(`${host}/contractor`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

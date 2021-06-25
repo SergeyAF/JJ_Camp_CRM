@@ -1,7 +1,9 @@
 export interface IKid {
   id: number
-  firstName: string
-  lastName: string
+  name: string
   gender: 'male' | 'female'
-  dateOfBirth: string
+  dob: string
+  contractorTypeId?: string
+  comments?: string
+  image?: string
 }

@@ -1,4 +1,4 @@
-interface ICamp {
+export interface ICamp {
   id: number
   name: string
   shiftList?: IShift[]

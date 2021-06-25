@@ -1,4 +1,5 @@
 const ApiError = require("../error/ApiError");
+const deleteFromBD = require('./basicCRUD')
 const {Sequelize} = require("sequelize");
 const {Contractor, Contractor_type, Contractor_info} = require('../models/models')
 
@@ -16,6 +17,7 @@ class ContractorController {
           {model: Contractor_type, attributes: [], required: false},
           {model: Contractor_info, attributes: [], required: false},
         ],
+        order: [['name', 'ASC']],
         attributes: {
           exclude: ['createdAt', 'updatedAt'],
           include: [
@@ -49,7 +51,13 @@ class ContractorController {
         const {gender, dob, image} = info
         infoData = await Contractor_info.create({gender, dob, image, contractorId: newContractor.id})
       }
-      return res.json({...newContractor.dataValues, infoData})
+      const data = {
+        id: newContractor.id,
+        name: newContractor.name,
+        gender: infoData.gender,
+        dob: infoData.dob,
+      }
+      return res.json({data, status_code: 1})
     } catch (e) {
       next(ApiError.badRequest(e))
     }
@@ -66,17 +74,9 @@ class ContractorController {
   }
 
   async deleteContractor(req, res, next) {
-    try {
-      const {id} = req.params
-      const result = await Contractor.destroy({where:{id}})
-      if (result) {
-        return res.status(200).json('Record deleted')
-      }
-      return next(ApiError.badRequest('Record not found'))
-    } catch (e) {
-      return next(ApiError.badRequest(e))
-    }
-
+    // todo: При удалении так же удалять и Contractor_info, если они есть
+    const {id} = req.params
+    await deleteFromBD(Contractor,id,res,next)
   }
 }
 

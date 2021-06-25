@@ -4,7 +4,9 @@ import { ActionsType } from "../actions/actions.type";
 
 const initState = {
   kidsList: [] as IKid[],
-  total: 0 as number
+  total: 0 as number,
+  offset: 0 as number,
+  limit: 10 as number
 }
 
 type initStateType = typeof initState;
@@ -14,7 +16,7 @@ const kidsListReducer = (state:initStateType = initState, action: ActionsType) =
     case 'kidsList/SET-KIDS-LIST':
       return ({
         ...state,
-        kidsList: action.payload.kids,
+        kidsList: action.payload.data,
         total: action.payload.total
         })
     case 'kidsList/ADD-KID-TO-LIST':
